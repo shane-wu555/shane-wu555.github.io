@@ -87,6 +87,25 @@
 
 }
 
+.paper-box.activity-box {
+    .paper-box-image {
+        img {
+            max-width: 260px;
+        }
+    }
+
+    @include breakpoint($medium) {
+        .paper-box-image {
+            min-width: 150px;
+            max-width: 28%;
+        }
+
+        .paper-box-text {
+            max-width: 72%;
+        }
+    }
+}
+
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
     content: ''; 
